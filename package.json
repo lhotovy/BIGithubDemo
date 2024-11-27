@@ -1,10 +1,13 @@
 {
   "name": "bigithubdemo",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "pnpm dlx cypress run",
+    "lint": "pnpm dlx eslint"
+   
   },
   "author": "",
   "license": "ISC",
