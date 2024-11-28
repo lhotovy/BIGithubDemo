@@ -1,6 +1,7 @@
 import { defineConfig } from "cypress";
 import { lighthouse, prepareAudit } from "@cypress-audit/lighthouse";
 import { pa11y } from "@cypress-audit/pa11y";
+import fs from "fs";
 
 export default defineConfig({
   projectId: "4strrf",
@@ -11,7 +12,13 @@ export default defineConfig({
       });
 
       on("task", {
-        lighthouse: lighthouse(),
+        lighthouse: lighthouse((lighthouseReport) => {
+          console.log("---- Writing lighthouse report to disk ----");
+    
+          fs.writeFile("lighthouse.html", lighthouseReport.report, (error) => {
+            error ? console.log(error) : console.log("Report created successfully");
+          });
+        }),
         pa11y: pa11y(console.log.bind(console)),
       });     
     },
