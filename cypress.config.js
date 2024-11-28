@@ -1,5 +1,6 @@
 import { defineConfig } from "cypress";
 import { lighthouse, prepareAudit } from "@cypress-audit/lighthouse";
+import { pa11y } from "@cypress-audit/pa11y";
 
 export default defineConfig({
   projectId: "4strrf",
