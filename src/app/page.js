@@ -1,6 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
+export const metadata = {
+  title: "CI/CD Demo App",
+  description: "A demo app for CI/CD",
+}
+
 export default function Home() {
   return (
     <div className={styles.page}>

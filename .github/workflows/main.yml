@@ -39,6 +39,7 @@ jobs:
         with:        
           start: pnpm run dev
           wait-on: 'http://localhost:3000'
+          command: "pnpm cypress run --browser=chrome --record"
           record: true
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
