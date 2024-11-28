@@ -9,17 +9,19 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write \"**/*.{js,jsx,md}\""   
+    "format": "prettier --write \"**/*.{js,jsx,md}\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@cypress-audit/lighthouse": "^1.4.2",
+    "@cypress-audit/pa11y": "^1.4.2",
     "cypress": "^13.16.0",
     "eslint": "^9.15.0",
+    "next": "15.0.3",
     "prettier": "^3.4.1",
     "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106",
-    "next": "15.0.3"
+    "react-dom": "19.0.0-rc-66855b96-20241106"
   },
   "devDependencies": {
     "eslint": "^8",
