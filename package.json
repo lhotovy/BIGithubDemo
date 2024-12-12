@@ -9,7 +9,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write \"**/*.{js,jsx,md}\""
+    "format": "prettier --write \"**/*.{js,jsx,md}\"",
+    "test": "pnpm cypress run --record --key d3a137ee-ada0-4e28-a757-37c2d5b17a5c"
   },
   "author": "",
   "license": "ISC",
